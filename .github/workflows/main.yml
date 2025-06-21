@@ -11,9 +11,10 @@ on:
    deploy:
       runs-on:ubuntu-latest
 
-      steps:
-      -name: checkout code
-       uses: actions/checkout@v4
-
+  steps:
+       -name: checkout code
+        uses: actions/checkout@v4
        -name: show all files
         run: ls -al
+
+-name: doing SSH to EC2
