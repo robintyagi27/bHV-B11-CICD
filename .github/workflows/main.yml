@@ -19,7 +19,7 @@ jobs:
         
         -name:  doing SSH to EC2
         uses:  appleboy/ssh-action@v1
-          with:  
+        with:  
               host: ${{ secrets.EC2_HOST }}
               username: ${{ secrets.EC2_USERNAME }}
               key: ${{ secrets.EC2_SSH_KEY }}
